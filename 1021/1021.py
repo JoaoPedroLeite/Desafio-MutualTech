@@ -5,13 +5,13 @@ def numero_notas(valor):
     print("NOTAS:")
     for valorNota in notas:
         numeroNotas = (valor//valorNota)
-        print(f"{numeroNotas} nota(s) de R$ {valorNota:.2f}")
+        print(f"{numeroNotas:.0f} nota(s) de R$ {valorNota:.2f}")
         valor -= numeroNotas * valorNota
     
     print("MOEDAS:")
     for valorMoeda in moedas:
         numeroMoedas = (valor//valorMoeda)
-        print(f"{numeroMoedas} moeda(s) de R$ {valorMoeda:.2f}")
+        print(f"{numeroMoedas:.0f} moeda(s) de R$ {valorMoeda:.2f}")
         valor -= numeroMoedas * valorMoeda
         valor = float('%.2f'% valor)
 
